@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -12,117 +13,115 @@ body{
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
-    gap: 10px;
+    gap: 1vh;
     text-decoration: solid;
     background-color: #57B4BA;
 }
 
 .container{
     background-color: #FDFBEE;
-    padding: 1vh;
+    padding: 2vh;
     border-radius: 2rem;
-    min-width: 50vw;
-    min-height: 40vh;
-    gap: 10px;
-}
-
-form button{
-    font-weight:150;
-    width: 100%;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-form input {
-    font-weight: 150;
-    border: none;
-    height: 29px;
-    border-style: solid;
-    border-radius: 1rem;
     width: 50%;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: all 0.3s ease; 
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
 }
-
-form input:hover {
-    border: none;
-    height: 35px;
-    border-style: solid;
-    border-radius: 1rem;
-    width: 60%;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 
 form{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 2rem;
+    gap: 2vh;
+    margin: 5%;
+    width: 100%;
 }
 
+form button{
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    background-color: #FE4F2D;
+    border-radius: 3rem;
+    height: 3rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover{
+    background-color: #F38C79;
+}
+
+form input{
+    font-weight: 600;
+    border: 2px solid #ccc;
+    height: 3rem;
+    border-radius: 1rem;
+    width: 80%;
+    font-size: 1.2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+}
+
+form input:hover{
+    height: 3.5rem;
+    width: 85%;
+    font-size: 1.5vw;
+}
 
 .dropdown{
     border: none;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25vh;
+    gap: 9vw;
 }
 
-.dropdown i {
+.dropdown i{
     color: blue;
-    margin-top: 40px;
-    transition: color 0.3s ease, font-size 0.3s ease; 
+    margin-top: 2vh;
+    transition: color 0.3s ease, font-size 0.3s ease;
     display: inline-block;
 }
 
-.dropdown i:hover {
+.dropdown i:hover{
     color: #57B4BA;
-    font-size: 3rem;
+    font-size: 3vw;
 }
-
-
-.select-container img {
-    width: 5rem;
-    transition: width 0.3s ease; 
-}
-
-.select-container img:hover {
-    width: 6.5rem;  
-}
-
 
 .select-container{
     display: flex;
     border: none;
     border-radius: 10px;
     background-color: #FDFBEE;
+    align-items: center;
+    padding: 1vh;
 }
 
 .select-container select{
     border: none;
     border-radius: 5px;
     height: 4rem;
-    font-size: medium;
+    font-size: 1.2vw;
     font-weight: bolder;
     background-color: #FDFBEE;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5rem;
 }
 
-form button{
-    border: none;
-    background-color: #FE4F2D;
-    border-radius: 3rem;
-    height: 2rem;
-    font-size: 20px;
+.select-container img{
+    width: 5vw;
+    transition: width 0.3s ease;
 }
-form button:hover{
-    background-color: #F38C79 ;
+
+.select-container img:hover{
+    width: 6.5vw;
 }
 
 .amount{
@@ -132,16 +131,211 @@ form button:hover{
     align-items: center;
 }
 
+#msg{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+#First, #Second{
+    color: red;
+    font-weight: bolder;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    gap: 1vh;
+    text-decoration: solid;
+    background-color: #57B4BA;
+}
+
+.container{
+    background-color: #FDFBEE;
+    padding: 2vh;
+    border-radius: 2rem;
+    width: 50%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 5%;
+    width: 90%;
+}
+
+form button{
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    background-color: #FE4F2D;
+    border-radius: 3rem;
+    height: 3rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover{
+    background-color: #F38C79;
+}
+
+form input{
+    font-weight: 600;
+    border: 2px solid #ccc;
+    height: 3rem;
+    border-radius: 1rem;
+    width: 80%;
+    font-size: 1.2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+form input:hover{
+    height: 3.5rem;
+    width: 85%;
+    font-size: 1.5vw;
+}
+
+.dropdown{
+    border: none;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.5vw;
+}
+
+.dropdown i{
+    color: blue;
+    margin-top: 2vh;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    display: inline-block;
+}
+
+.dropdown i:hover{
+    color: #57B4BA;
+    font-size: 3vw;
+}
+
+.select-container{
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    background-color: #FDFBEE;
+    align-items: center;
+    padding: 1vh;
+}
+
+.select-container select{
+    border: none;
+    border-radius: 5px;
+    height: 4rem;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    background-color: #FDFBEE;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5rem;
+}
+
+.select-container img{
+    width: 5vw;
+    transition: width 0.3s ease;
+}
+
+.select-container img:hover{
+    width: 6.5vw;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #msg{
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    gap: 1vw;
 }
-#msg div{
-    margin-right: 10px;
-}
-#First,#Second{
-    color:red;
+
+#First{
+    color: red;
     font-weight: bolder;
+    transition: all o.3 ease;
+}
+#Second{
+    color: red;
+    font-weight: bolder;
+    transition: all o.3 ease;
+}
+#First:hover{
+    font-size: 28px;
+    font-weight: bolder;
+}
+#Second:hover{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 3vw;
+    }
+
+    .container {
+        width: 80%;
+        padding: 4vh;
+    }
+
+    form input {
+        width: 90%;
+        font-size: 3vw;
+    }
+
+    form input:hover {
+        width: 95%;
+        font-size: 3.5vw;
+    }
+
+    form button {
+        font-size: 3vw;
+    }
+
+    .dropdown {
+        font-size: 3vw;
+    }
+
+    .dropdown i {
+        font-size: 3vw;
+    }
+
+    .select-container select {
+        font-size: 3vw;
+    }
+
+    .select-container img {
+        width: 10vw;
+    }
 }
